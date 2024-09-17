@@ -120,6 +120,10 @@ fieldset {
   margin-block: .75rem;
 }
 
+.margin-bottom {
+  padding-bottom: 1rem;
+}
+
 .flex {
   display: flex;    
 }

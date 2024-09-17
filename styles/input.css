@@ -80,9 +80,7 @@
   justify-content: space-between;
   padding-left: 1.800rem;
   padding-right: 2rem;  
-  position: relative;
-  
-  
+  position: relative;  
 
   & input {
     position: absolute;    
@@ -168,6 +166,50 @@ input[type="datetime-local"] {
     outline: .2rem solid var(--brand-color-light);    
   }  
 }
+
+.event {
+  display: grid;
+  grid-template-columns: repeat(4, 8.375rem);
+  gap: .5rem;
+  position: relative;
+  
+
+  & input[type="radio"] {
+    appearance: none;
+    position: absolute;    
+    height: 6.4375rem;
+    width: 8.375rem;
+    border-radius: .5rem;
+    cursor: pointer; 
+  }
+
+  & label {
+    border-radius: .5rem;
+    height: 6.4375rem;
+    width: 8.375rem;  
+    
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);        
+  }
+
+  & img { 
+    margin-left: 0.20rem;
+    border-radius: .3rem;
+    margin-top: 0.25rem; 
+    margin-bottom: .35rem;     
+  }
+
+  & figcaption {    
+    text-align: center;
+    color: var(--text-heading);    
+  }
+  
+  & input[type="radio"]:checked {    
+    outline: .2rem solid var(--brand-color-light);    
+  }  
+}
+
+
 
 
 
