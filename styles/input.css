@@ -1,0 +1,181 @@
+.input-wrapper-flex {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+  
+
+  & label {
+    display: grid;    
+  }
+
+  & input {
+    margin-top:  0.75rem;
+    width: 17.10rem;
+    height: 3rem;         
+  }
+
+}
+
+.input-wrapper-flex-1 {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;  
+
+  & label {
+    display: grid;    
+  }
+
+  & input {    
+    margin-top:  0.75rem;
+    width: 17.10rem;
+    height: 3rem; 
+  }
+
+  & #type {
+    width: auto;
+  }
+}
+
+.input-wrapper {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1rem;
+
+  & input {
+    width: 35rem;
+    height: 3rem;    
+  }
+
+  & textarea {
+    width: 35rem;
+    height: 8.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+::placeholder {
+  color: var(--input-placeholder);  
+}
+
+.input, textarea {  
+  background-color: var(--input-base);
+  outline: 1px solid var(--input-stroke);
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  padding: .75rem 1rem;
+  color: var(--input-placeholder);  
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.input-wrapper-type {  
+  display: flex;
+  gap: .25rem;
+  background-color: var(--input-base);
+  width: 17.10rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.800rem;
+  padding-right: 2rem;  
+  position: relative;
+  
+  
+
+  & input {
+    position: absolute;    
+    width: 20%;
+    height: 100%;      
+  }
+
+  & label { 
+  cursor: pointer;  
+  }  
+}
+
+.option input[name="type"] {   
+  display: none;
+}
+
+.option input[name="type"]:checked + label {
+  font-weight: bold;
+  color: #fff;
+  
+
+  display: flex;  
+  background-color: var(--shape-button);
+  border-radius: .75rem;  
+  padding: .75rem 1.825rem;
+  justify-content: space-between;
+  margin-left: -1.800rem;
+  margin-right: -2rem;  
+}
+
+.building-select input + label::before {
+  content: url(/assets/icons/building-default.svg);  
+}
+
+.building-select input[name="type"]:checked + label::before {  
+  content: url(/assets/icons/building-select.svg);  
+}
+
+.video-select input[name="type"]:checked + label::before {
+  content: url(/assets/icons/video-select.svg);  
+}
+
+.video-select input + label::before {
+  content: url(/assets/icons/video.svg);  
+}
+
+input[type="datetime-local"] {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+.custom { 
+  margin-bottom: 3rem;
+}
+
+.custom-label {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem; 
+}
+
+.paint {
+  margin-bottom: 1.5rem;
+}
+
+.color {
+  display: flex;
+  gap: .375rem;  
+  margin-bottom: 1.75rem;
+  margin-left: -.3rem; 
+
+  & input[type="radio"] {
+    appearance: none;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;  
+    cursor: pointer;    
+    border: .375rem solid var(--shape-button);    
+  }
+  
+  & input[type="radio"]:checked {    
+    outline: .2rem solid var(--brand-color-light);    
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+

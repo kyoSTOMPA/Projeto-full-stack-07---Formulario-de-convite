@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Formulário de convite</title>
+  </head>
+  <body>
+    <div id="layout">
+      <aside class="background-contain border">
+        <img id="bg" src="assets/Background.png" alt="" />
+
+        <img id="logo" src="assets/Logo.svg" alt="" />
+        <h1>Festivite</h1>
+        <p class="body-xs">Crie um convite digital para o seu evento</p>
+      </aside>
+
+      <main class="invite">
+        <h2 class="heading-md">Crie seu convite</h2>
+        <fieldset>
+          <form action="post" enctype="multipart/form-data">
+            <div class="flex-gap75">
+              <img src="assets/icons/calendar.svg" alt="" />
+              <legend class="heading-sm">Sobre o evento</legend>
+            </div>
+            <div class="input-wrapper">
+              <label class="body-xs" for="title">Título</label>
+              <input
+                class="input"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Nome do evento"
+              />
+            </div>
+
+            <div class="input-wrapper-flex">
+              <div class="">
+                <label class="body-xs" for="start">Início</label>
+                <input
+                  class="input uppercase"
+                  type="datetime-local"                  
+                  id="start"
+                  name="start"
+                  lang="pt-BR"
+                />               
+              </div>
+              <div class="">
+                <label class="body-xs" for="end">Fim</label>
+                <input class="input uppercase" type="datetime-local" id="end" name="end" lang="pt-BR" />
+              </div>
+            </div>
+
+            
+            <legend class="body-xs margin-block">Tipo</legend>
+            <div class="margin-block flex">
+              <div class="input-wrapper-type input">
+                <div class="option building-select">                  
+                  <input type="radio" name="type" id="in-person">
+                  <label class="body-xs flex-gap label-hover" for="in-person">Presencial</label>
+              </div>
+              
+              <div class="option video-select">
+                <input type="radio" name="type" id="online">
+                <label class="body-xs flex-gap label-hover" for="online">Online</label>
+              </div>
+            </div>
+            
+            <div class="body-xs grid-2">
+              <label for="local">Local</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="local"
+                  name="local"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="body-xs" for="description">Descrição</label>
+              <textarea
+                class="body-sm"
+                id="description"
+                name="description"
+                placeholder="Escreva sobre os detalhes do evento."             
+
+              ></textarea>
+            </div>
+
+
+            <div class="custom">
+
+              <div class="flex-gap75">
+                <img class="" src="/assets/icons/paintbrush-vertical.svg" alt="">
+                <span class="heading-sm">Personalização</span>
+              </div>
+
+              <span class="body-xs custom-label" for="color">Cor principal</span>              
+            
+            <div class="color">           
+              <label for="brand-color-light"></label>
+              <input type="radio" id="brand-color-light" name="color" value="" />
+
+              <label for="accent-navy"></label>
+              <input type="radio" id="accent-navy" name="color" value="" />
+
+              <label for="accent-purple"></label>
+              <input type="radio" id="accent-purple" name="color" value="" />
+
+              <label for="accent-fuschia"></label>
+              <input type="radio" id="accent-fuschia" name="color" value="" />
+
+              <label for="accent-pink"></label>
+              <input type="radio" id="accent-pink" name="color" value="" />
+
+              <label for="color-danger"></label>
+              <input type="radio" id="color-danger" name="color" value="" />
+
+              <label for="accent-orange"></label>
+              <input type="radio" id="accent-orange" name="color" value="" />
+
+              <label for="accent-yellow"></label>
+              <input type="radio" id="accent-yellow" name="color" value="" />
+
+              <label for="accent-lime"></label>
+              <input type="radio" id="accent-lime" name="color" value="" />
+
+              <label for="accent-green"></label>
+              <input type="radio" id="accent-green" name="color" value="" />
+
+              <label for="accent-cyan"></label>
+              <input type="radio" id="accent-cyan" name="color" value="" />
+            </div>
+
+            <div class="body-xs">
+              <label for="event">Tema do evento</label>
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Aniversário"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Infantil"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Formatura"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Casamento"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Chá de bebê"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Chá de panela"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Carnaval"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Páscoa"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="São João"
+              />
+              <input
+                type="radio"
+                id="event"
+                name="event"
+                placeholder="Halloween"
+              />
+              <input type="radio" id="event" name="event" placeholder="Natal" />
+              <input type="radio" id="event" name="event" placeholder="Outro" />
+            </div>
+
+            <div class="">
+              <label class="body-xs" for="style">Estilo</label>
+              <button id="style" name="style">Escuro</button>
+            </div>
+
+            <div class="">
+              <label class="body-xs" for="file">Foto de capa</label>
+              <input type="file" id="file" name="file" accept="image/*" />
+            </div>
+          </div>
+
+            <legend class="heading-sm">Dados para contato</legend>
+            <div class="input-wrapper">
+              <label class="body-xs" for="full-name">Nome</label>
+              <input
+                class="input"
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Nome completo"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label class="body-xs" for="email">E-mail</label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@email.com"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label class="body-xs" for="telephone">Telefone</label>
+              <input 
+                class="input"
+                type="number"
+                id="telephone"
+                name="telephone"
+                placeholder="(99) 99999-9999"
+              />
+            </div>
+            <div class="">
+              <input type="checkbox" id="terms" name="terms" />
+              <label class="body-xs" for="terms"
+                >Li e concordo com os Termos e Condições e com a Política de
+                Privacidade</label
+              >
+            </div>
+            <div class="">
+              <input
+                type="checkbox"
+                id="promotion-email"
+                name="promotion-email"
+              />
+              <label class="body-xs" for="promotion-email"
+                >Aceito receber atualizações e promoções por e-mail</label
+              >
+            </div>
+            <div class="">
+              <input type="checkbox" id="promotion-sms" name="promotion-sms" />
+              <label class="body-xs" for="promotion-sms"
+                >Aceito receber atualizações e promoções por SMS</label
+              >
+            </div>
+            <div>
+              <button>Gerar convite</button>
+            </div>
+          </form>
+        </fieldset>
+      </main>
+    </div>
+  </body>
+</html>

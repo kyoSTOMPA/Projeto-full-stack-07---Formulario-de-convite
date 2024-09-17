@@ -1,0 +1,60 @@
+#layout {  
+  display: grid;
+  grid-template-columns: 27.50rem 72.50rem;
+
+  height: 100vh;  
+}
+
+#bg { 
+  width: 25rem;
+  height: 45.5rem;  
+  border-radius: 12px;  
+  /* margin: .55rem; */
+  
+  margin: 1.25rem;
+  
+  position: absolute;
+}
+
+
+/* .border {
+  background-color: var(--shape-background);
+  border-radius: .75rem;
+  height: 46.60rem; 
+  
+  margin: .70rem;
+} */
+
+.background-contain {
+  overflow: hidden;
+
+  & h1, #logo, p {
+  display: grid;
+  position: relative;
+  z-index: 3;
+  margin-left: 3.25rem;
+  }
+
+  & #logo {
+  width: 2.86rem;
+  height: 3rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1rem;
+  }
+
+  & h1 {
+    color: var(--accent-pink);
+    font: var(--logo);
+
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: auto;
+  }
+
+  & p {
+    margin-top: .25rem;
+  }
+}
+
+

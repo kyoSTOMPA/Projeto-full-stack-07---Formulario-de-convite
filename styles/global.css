@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color-light: #59B2FF;
+  --brand-color-mid: #3487CF;
+  --brand-color-dark: #1D6FB6;
+
+  --accent-purple: #B259FF;
+  --accent-fuschia: #FF59F9;
+  --accent-pink: #FF598B;
+  --accent-orange: #FF8B59;
+  --accent-yellow: #FFCD59; 
+  --accent-lime: #E1FF59;
+  --accent-green: #59FF91;
+  --accent-cyan: #59FFF9;
+  --accent-navy: #6A59FF;
+
+  --color-danger:  #FF5959;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+}
+
+/* Leckerli One */
+.logo { 
+  font-family: "Leckerli One", cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: auto;
+}
+
+/* Baloo 2 */
+.heading-md {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: auto;
+  font-family: "Baloo 2", sans-serif;
+  color: var(--text-heading);
+}
+
+.heading-sm {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: auto;
+  font-family: "Baloo 2", sans-serif;
+  color: var(--text-heading);
+}
+
+/* Open Sans */
+.body-md { 
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body-sm {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body-xs {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: auto;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-body);
+}
+
+fieldset {
+  border: none;
+}
+
+.invite {
+  padding: 5rem 8.125rem 5rem 8.125rem;
+  margin-block: 1.25rem;
+  border-radius: .75rem;
+}
+
+.grid {
+  display: grid;   
+}
+
+.grid-1 {
+  display: grid;
+  margin-left: 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  margin-left: .75rem; 
+  margin-top: -1.75rem;
+  
+  & label {
+    margin-bottom: .75rem;    
+  }
+
+  & input {
+    width: 17.10rem;
+    height: 3rem;
+  }
+
+}
+
+.margin-block {  
+  margin-block: .75rem;
+}
+
+.flex {
+  display: flex;    
+}
+
+.flex-gap {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-gap75 {
+  display: flex;
+  gap: .75rem;  
+}
+
+body {
+  background-color: var(--shape-background);
+}
+
+main {  
+  background-color: var(--shape-body);  
+}
+
+
+
+
+
+
+
+
+
