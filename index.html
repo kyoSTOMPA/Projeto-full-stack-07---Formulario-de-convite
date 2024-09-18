@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="styles/index.css" />
     <title>Formulário de convite</title>
   </head>
@@ -299,20 +299,29 @@
               <div class="card">  
               <img src="/assets/img/outro.png" alt="">
               <figcaption>Outro</figcaption>
-            </div>
+                </div>
               </label>
             </div>
 
-            <div class="">
-              <label class="body-xs" for="style">Estilo</label>
-              <button id="style" name="style">Escuro</button>
-            </div>
+            <div class="flex margin-top">
+              <div class="left-content">
+              <legend class="body-xs">Estilo</legend>
+              <div class="grid toggle-container">
+                <input type="checkbox" id="toggle">
+                <label class="body-xs" for="toggle"></label>
+              </div>
+              <figcaption id="toggle-text">Escuro</figcaption>
+          </div>
 
-            <div class="">
-              <label class="body-xs" for="file">Foto de capa</label>
+            <div class="right-content">
+            <legend class="body-xs">Foto de capa</legend>
+            <div class="drop-area">              
+              <label class="body-xs" for="file">Selecionar</label>
               <input type="file" id="file" name="file" accept="image/*" />
             </div>
           </div>
+          </div>
+        </div>
 
             <legend class="heading-sm">Dados para contato</legend>
             <div class="input-wrapper">

@@ -1,0 +1,77 @@
+.toggle-container {    
+  position: relative;
+  width: 60px;
+  height: 30px;  
+
+  & input {
+    display: none;
+  }
+
+  & label {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 1.875rem;
+  cursor: pointer;  
+  position: relative;
+  transition: background-color 0.3s; 
+  }
+
+  & label::after {
+  content: '';
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  height: 1.5rem;
+  left: 2px;
+  position: absolute;
+  top: 2px;  
+  width: 1.5rem;
+  transition: transform 0.3s; 
+  }
+
+  & input:checked + label::after {
+    transform: translateX(1.875rem);
+    background-color: var(--text-heading);    
+  }
+
+  & input:checked + label {
+    background-color: var(--brand-color-light);    
+  }
+}
+
+.drop-area {  
+  position: relative;
+  width: 7.4375rem;
+  height: 2.5rem;  
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+   
+
+  & input {
+    display: none;    
+  }
+
+  & label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;    
+    
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  & label::before {
+    content: url(/assets/icons/upload-2.svg);
+    margin-top: .25rem;  
+  }  
+}
+
+.left-content {
+  margin-top: .25rem;
+  
+  & figcaption {
+    margin-left: 70px;
+    margin-top: -24px;
+  }
+}

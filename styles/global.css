@@ -140,6 +140,11 @@ fieldset {
   gap: .75rem;  
 }
 
+.margin-top {
+  margin-top: 1.75rem;
+  gap: 1rem;
+}
+
 body {
   background-color: var(--shape-background);
 }

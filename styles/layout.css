@@ -57,4 +57,12 @@
   }
 }
 
+.left-content, .right-content {
+  width: 25%;
+  
+  & legend {
+    margin-bottom: .75rem;
+  }
+}
+
 
