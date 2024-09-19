@@ -67,11 +67,17 @@
   }  
 }
 
-.left-content {
-  margin-top: .25rem;
+.left-content {  
   
   & figcaption {
-    margin-left: 70px;
-    margin-top: -24px;
+    margin-left: 4.375rem;
+    margin-top: -1.5rem;
   }
+}
+
+#upload {  
+  margin-left: 8.125rem;
+  margin-top: -1.875rem;
+  width: 11.875rem;
+  
 }

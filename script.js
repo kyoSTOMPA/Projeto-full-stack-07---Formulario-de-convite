@@ -1,5 +1,23 @@
-if (input.checked) {
-  toggleText.textContent = 'Escuro';
-} else {
-  toggleText.textContent = 'Claro';
-};
+const toggle = document.getElementById('toggle');
+const toggleText = document.getElementById('toggleText');
+
+toggle.addEventListener('change', () => {
+  if (toggle.checked) {
+    toggleText.textContent = 'Claro';
+  } else {
+    toggleText.textContent = 'Escuro';
+  }
+});
+
+const fileUpload = document.getElementById('file');
+const fileNameDisplay = document.getElementById('upload');
+
+fileUpload.addEventListener('change', function() {
+  const file = fileUpload.files[0];
+  if (file) {
+    fileNameDisplay.textContent = file.name;
+    console.log('Tipo de arquivo:', file.type); // Exibe o tipo de arquivo no console
+  } else {
+    fileNameDisplay.textContent = 'Nenhum arquivo selecionado';
+  }
+});

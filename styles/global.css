@@ -81,6 +81,14 @@
   color: var(--text-body);
 }
 
+.body-placeholder {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: auto;
+  font-family: "Open Sans", sans-serif;
+  color: var(--input-placeholder);
+}
+
 fieldset {
   border: none;
 }
