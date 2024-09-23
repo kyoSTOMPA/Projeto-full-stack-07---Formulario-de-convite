@@ -1,8 +1,15 @@
 #layout {  
   display: grid;
-  grid-template-columns: 27.50rem 72.50rem;
+  grid-template-columns: 27.50rem 51.25rem; 
+  /* 72.50rem */
 
   height: 100vh;  
+}
+
+.invite {
+  padding: 5rem 8.125rem 5rem 8.125rem;
+  margin-block: 1.25rem;
+  border-radius: .75rem;  
 }
 
 #bg { 
@@ -58,7 +65,7 @@
 }
 
 .left-content, .right-content {
-  width: 25%;
+  width: 40%;  
   
   & legend {
     margin-bottom: .75rem;

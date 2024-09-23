@@ -16,7 +16,7 @@ fileUpload.addEventListener('change', function() {
   const file = fileUpload.files[0];
   if (file) {
     fileNameDisplay.textContent = file.name;
-    console.log('Tipo de arquivo:', file.type); // Exibe o tipo de arquivo no console
+    console.log('Tipo de arquivo:', file.type);
   } else {
     fileNameDisplay.textContent = 'Nenhum arquivo selecionado';
   }

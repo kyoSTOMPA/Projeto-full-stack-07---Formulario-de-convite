@@ -43,7 +43,7 @@
             </div>
 
             <div class="input-wrapper-flex">
-              <div class="">
+              <div>
                 <label class="body-xs" for="start">Início</label>
                 <input
                   class="input uppercase"
@@ -53,7 +53,7 @@
                   lang="pt-BR"
                 />               
               </div>
-              <div class="">
+              <div>
                 <label class="body-xs" for="end">Fim</label>
                 <input class="input uppercase" type="datetime-local" id="end" name="end" lang="pt-BR" />
               </div>
@@ -92,8 +92,7 @@
                 class="body-sm"
                 id="description"
                 name="description"
-                placeholder="Escreva sobre os detalhes do evento."             
-
+                placeholder="Escreva sobre os detalhes do evento." 
               ></textarea>
             </div>
 
@@ -101,7 +100,7 @@
             <div class="custom">
 
               <div class="flex-gap75">
-                <img class="" src="/assets/icons/paintbrush-vertical.svg" alt="">
+                <img src="/assets/icons/paintbrush-vertical.svg" alt="">
                 <span class="heading-sm">Personalização</span>
               </div>
 
@@ -337,10 +336,13 @@
               />
               <div class="fullname error">
                 <img src="/assets/icons/circle-alert.svg" alt="">
-                <span class="body-xs">Campo obrigatório</span>
+                <span class="body-xs"> Campo obrigatório</span>
             </div>
             </div>
-            <div class="input-wrapper">
+
+            
+            <div class="input-wrapper-flex">
+            <div>
               <label class="body-xs" for="email">E-mail</label>
               <input
                 class="input"
@@ -350,40 +352,45 @@
                 placeholder="exemplo@email.com"
               />
             </div>
-            <div class="input-wrapper">
+
+            <div>
               <label class="body-xs" for="telephone">Telefone</label>
               <input 
                 class="input"
-                type="number"
-                id="telephone"
+                type="tel"
+                id="tel"
                 name="telephone"
                 placeholder="(99) 99999-9999"
+                maxlength="11"
               />
             </div>
-            <div class="">
+          </div>
+
+          <div class="risk"></div>
+
+          <div class="terms body-xs">
+            <div>
               <input type="checkbox" id="terms" name="terms" />
-              <label class="body-xs" for="terms"
-                >Li e concordo com os Termos e Condições e com a Política de
-                Privacidade</label
-              >
+              <label for="terms"></label>
+                <span>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></span>
             </div>
-            <div class="">
+            <div>
               <input
                 type="checkbox"
                 id="promotion-email"
                 name="promotion-email"
               />
-              <label class="body-xs" for="promotion-email"
-                >Aceito receber atualizações e promoções por e-mail</label
-              >
-            </div>
-            <div class="">
-              <input type="checkbox" id="promotion-sms" name="promotion-sms" />
-              <label class="body-xs" for="promotion-sms"
-                >Aceito receber atualizações e promoções por SMS</label
-              >
+              <label for="promotion-email"></label>
+              <span>Aceito receber atualizações e promoções por e-mail</span>
             </div>
             <div>
+              <input type="checkbox" id="promotion-sms" name="promotion-sms" />
+              <label for="promotion-sms"></label>
+              <span>Aceito receber atualizações e promoções por SMS</span>
+            </div>
+          </div>
+
+            <div class="send body-sm">              
               <button>Gerar convite</button>
             </div>
           </form>
