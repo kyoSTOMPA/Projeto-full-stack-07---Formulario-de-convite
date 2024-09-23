@@ -172,7 +172,7 @@ input[type="datetime-local"] {
   display: flex;
   gap: .375rem;  
   margin-bottom: 1.75rem;
-  margin-left: -.3rem; 
+  margin-left: -.3rem;   
 
   & input[type="radio"] {
     appearance: none;
@@ -180,7 +180,7 @@ input[type="datetime-local"] {
     height: 2.5rem;
     width: 2.5rem;  
     cursor: pointer;
-    border: .375rem solid var(--shape-button);    
+    border: .375rem solid var(--shape-button);        
   }
   
   & input[type="radio"]:checked {    

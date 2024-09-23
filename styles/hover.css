@@ -1,0 +1,26 @@
+.hover-label {
+  &:hover, &:focus  {
+      outline: 1px solid var(--brand-color-light);
+    }  
+}
+
+.color {
+ & input[type="radio"]:hover, input[type="radio"]:focus {
+  border: .375rem solid var(--shape-hover);
+ }
+}
+
+.event {
+  & label:hover {
+    background-color: var(--shape-hover);
+    height: 6.4375rem;
+    width: 8.375rem;    
+  }
+ }
+
+ .drop-area {
+  & label:hover {
+    background-color: var(--shape-hover);
+    border-radius: .5rem; 
+  }
+ }
