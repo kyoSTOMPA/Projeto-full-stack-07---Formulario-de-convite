@@ -233,8 +233,7 @@ input[type="datetime-local"] {
 .fullname { 
 
   & :invalid {
-    outline: 0.05rem solid var(--color-danger);
-      
+    outline: 0.05rem solid var(--color-danger);      
   }
 
   & span {
